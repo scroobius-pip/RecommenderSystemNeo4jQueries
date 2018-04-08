@@ -4,3 +4,4 @@ Order By s.similarity Limit 5
 Match(o)-[:LIKES]-(om:Media)
 Where Not (u)-[:LIKES]-(om)
 Return Distinct om
+Skip 0 Limit 5  // For pagination
